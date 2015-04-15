@@ -1,6 +1,6 @@
 #!/bin/bash
 SRC_DIR='/vagrant/src'
-
+mkdir $SRC_DIR
 cd $SRC_DIR
 
 apt-get update -y
