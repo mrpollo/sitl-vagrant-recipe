@@ -1,5 +1,5 @@
 #!/bin/bash
-SRC_DIR='/vagrant/src'
+SRC_DIR='/home/vagrant/src'
 mkdir $SRC_DIR
 cd $SRC_DIR
 
@@ -36,7 +36,7 @@ apt-get install -y python-matplotlib python-serial python-wxgtk2.8 python-lxml
 apt-get install -y python-scipy python-opencv ccache gawk git python-pip python-pexpect
 pip install pymavlink MAVProxy
 
-sudo echo "export SRC_DIR='/vagrant/src'
+sudo echo "export SRC_DIR='/home/vagrant/src'
 export PATH=\$PATH:\$SRC_DIR/jsbsim/src
 export PATH=\$PATH:\$SRC_DIR/ardupilot/Tools/autotest
 export PATH=/usr/lib/ccache:\$PATH" >> /home/vagrant/.ardupilot

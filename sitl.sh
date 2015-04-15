@@ -15,7 +15,7 @@ fi
 
 # define here to avoid problems with the above
 SIM=`which sim_vehicle.sh`
-SRC_PATH=/vagrant/src
+SRC_PATH=/home/vagrant/src
 ARDU_PATH="$SRC_PATH/ardupilot"
 PLANE_HOME="$ARDU_PATH/ArduPlane"
 COPTER_HOME="$ARDU_PATH/ArduCopter"
