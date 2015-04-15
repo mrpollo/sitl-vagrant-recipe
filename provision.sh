@@ -39,5 +39,9 @@ pip install pymavlink MAVProxy
 sudo echo "export SRC_DIR='/vagrant/src'
 export PATH=\$PATH:\$SRC_DIR/jsbsim/src
 export PATH=\$PATH:\$SRC_DIR/ardupilot/Tools/autotest
-export PATH=/usr/lib/ccache:\$PATH" >> /home/vagrant/.bashrc
+export PATH=/usr/lib/ccache:\$PATH" >> /home/vagrant/.ardupilot
+sudo echo "export RC_LOADED=true
+source /home/vagrant/.ardupilot" >> /home/vagrant/.bashrc
+sudo chown vagrant:vagrant /home/vagrant/.ardupilot
+
 source /home/vagrant/.bashrc
