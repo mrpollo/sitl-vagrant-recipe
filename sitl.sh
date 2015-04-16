@@ -10,7 +10,6 @@ if [[ ! -e `env | grep "RC_LOADED"` ]]; then
 	# this is a check for when sitl.sh is launched witouth loading bash
 	# vagrant ssh -c "/vagrant/sitl.sh"
 	source /home/vagrant/.ardupilot
-	echo "hit"
 fi
 
 # define here to avoid problems with the above
